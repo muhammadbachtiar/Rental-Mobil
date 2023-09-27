@@ -31,3 +31,49 @@ menuList.forEach((menuItem) => {
       document.body.style.overflowY = "auto";
     });
   });
+
+if (window.matchMedia("(min-width: 1200px)").matches){
+  var carouselWidth = $(".carousel-inner")[0].scrollWidth;
+  var cardWidth = $(".carousel-item").width();
+  var scrollPosition = 0;
+
+  $(".next-button-carousel").on("click", function () {
+    if (scrollPosition < (carouselWidth - cardWidth * 4)) { 
+      scrollPosition += cardWidth;  
+      $(".carousel-inner").animate({ scrollLeft: scrollPosition },600); 
+    }
+  });
+
+  $(".previous-button-carousel").on("click", function () {
+    if (scrollPosition > 0) {
+      scrollPosition -= cardWidth;
+      $(".carousel-inner").animate(
+        { scrollLeft: scrollPosition },
+        600
+      );
+    }
+  });
+} if ((window.matchMedia("(min-width: 576px) and (max-width: 1199px)").matches)) {
+  
+  var carouselWidth = $(".carousel-inner")[0].scrollWidth;
+  var cardWidth = $(".carousel-item").width();
+  var scrollPosition = 0;
+
+  $(".next-button-carousel").on("click", function () {
+    if (scrollPosition < (carouselWidth - cardWidth * 3)) { 
+      scrollPosition += cardWidth;  
+      $(".carousel-inner").animate({ scrollLeft: scrollPosition },600); 
+    }
+  });
+
+  $(".previous-button-carousel").on("click", function () {
+    if (scrollPosition > 0) {
+      scrollPosition -= cardWidth;
+      $(".carousel-inner").animate(
+        { scrollLeft: scrollPosition },
+        600
+      );
+    }
+  });
+
+}
