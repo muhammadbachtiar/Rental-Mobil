@@ -1,0 +1,193 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rental Mobil</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body>
+      <div class="row">
+        <div class="overlay"></div>
+        <section class="heroContent">
+          <div class="fixed-header">
+            <div class="container">
+              <div class="col-12 heroContent-Head">
+                <div class="row justify-content-around">
+                    <div class="col-md-1 col-3 icon-Header">
+                      <a class="d-block" href="/">
+                        <div class="icon-Header">
+                        </div>
+                      </a>
+                    </div>
+                  <div class="col-md-10 col-6">
+                    <div class="hamburger-menu">
+                      <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="responsive-MenuDesktop">
+                        <ul class="nav justify-content-md-end justify-content-start Menu">
+                          <li class="nav-item Container-colse-button">
+                              <div class="col-6 align-self-center p-3"><h3>BCR</h3></div>
+                              <div class="col-6 close-button align-self-center text-end"><i class="fa-solid fa-xmark"></i></div>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="/#ourServiceContent">Our Service</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="/#whyUsContent">Why Us</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="/#testimonialContent">Testimonial</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="/#FAQContent">FAQ</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" id="Menu-registerbtn" href="#">Register</a>
+                          </li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="responsive-MenuMobile">
+            <ul class="nav justify-content-md-end justify-content-start Menu">
+              <li class="nav-item Container-colse-button">
+                  <div class="col-6 align-self-center p-3"><h3>BCR</h3></div>
+                  <div class="col-6 close-button align-self-center text-end"><i class="fa-solid fa-xmark"></i></div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ourServiceContent">Our Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#whyUsContent">Why Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonialContent">Testimonial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#FAQContent">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="Menu-registerbtn" href="#">Register</a>
+              </li>
+            </ul>
+        </div>
+          <div class="col-12 heroContent-Content" id="heroContent-Content">
+            <div class="row justify-content-between align-items-center">
+              <div class="col-lg-5 py-3" id="heroContent-Content--text">
+                <h3 class="text-start fw-bolder heroContent-Content--text-h3">
+                  Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)
+                </h3>
+                <p class="text-start">Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
+              </div>
+              <div class="col-lg-7 heroContent-Content--img">
+                <img src="css/img/MercedesCar.png" class="rounded float-end float-md-none" alt="..." id="heroContent-imageCarContent">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="container" style="width: 80%;">
+            <div class="my-3">
+              <div class="card findCarCard">
+                <div class="card-body">
+                  <form>
+                    <div class="row justify-content-around">
+                        <div class="col">
+                          <label for="tipeDriver" class="form-label">Tipe Driver</label>
+                          <select class="form-select" id="tipeDriver" required>
+                            <option disabled selected>Pilih Tipe Driver</option>
+                            <option value="1">Dengan Sopir</option>
+                            <option value="0">Tanpa Sopir (Lepas Kunci)</option>
+                          </select>
+                        </div>
+                        <div class="col-12 col-xl">
+                          <label for="tanggal" class="form-label">Tanggal</label>
+                          <input type="date" class="form-control" id="tanggal" required>
+                        </div>
+                        <div class="col-12 col-xl">
+                          <label for="waktu" class="form-label">Waktu Jemput/Ambil</label>
+                          <input type="time" class="form-control" id="waktu" required>
+                        </div>
+                        <div class="col-12 col-xl">
+                          <label for="orang" class="form-label">Jumlah Penumpang (optional)</label>
+                          <input type="number" min="1" class="form-control" id="orang" placeholder="Jumlah Penumpang">
+                        </div>
+                        <div class="col-12 col-xl-2 align-self-end">
+                          <button type="submit" class="btn-startRent btn" id="searchCarBtn">Cari Mobil</button>
+                          <button class="btn-edit btn" id="editBtn" style="display: none;">Edit</button>
+                        </div>
+                    </div>
+                  </form>
+                </div>
+              </div>  
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="container my-2" style="width: 80%;">
+            <div id="carList" class="row">
+            </div>
+          </div>
+        </section>
+        <footer class="my-5">
+            <div class="container">
+                <div class="row justify-content-around px-3">
+                    <div class="col-md-4 px-lg-5">
+                        <p class="card-text my-2 fs-6">Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
+                        <p class="card-text my-2 fs-6">binarcarrental@gmail.com</p>
+                        <p class="card-text my-2 fs-6">081-233-334-808</p>
+                    </div>
+                    <div class="col-md-2">
+                        <nav class="flex-column footer-partAnchor fw-medium">
+                            <a class="nav-link my-1" href="#item-1-1">Our Service</a>
+                            <a class="nav-link my-1" href="#item-1-2">Why Us</a>
+                            <a class="nav-link my-1" href="#item-1-2">Testimonial</a>
+                            <a class="nav-link my-1" href="#item-1-2">FAQ</a>
+                        </nav>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="card-text">Connect with us</p>
+                        <div class="row footer-Contact">
+                            <div class="col-2">
+                                <a href=""><span class="footer-Contact--badge"><i class="fa-brands fa-facebook-f"></i></span></a>
+                            </div>
+                            <div class="col-2">
+                                <a href=""><span class="footer-Contact--badge"><i class="fa-brands fa-instagram"></i></span></a>
+                            </div>
+                            <div class="col-2">
+                                <a href=""><span class="footer-Contact--badge"><i class="fa-brands fa-twitter"></i></span></a>
+                            </div>
+                            <div class="col-2">
+                                <a href=""><span class="footer-Contact--badge"><i class="fa-regular fa-envelope"></i></span></a>
+                            </div>
+                            <div class="col-2">
+                                <a href=""><span class="footer-Contact--badge"><i class="fa-brands fa-twitch"></i></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <p class="card-text my-2">Copyright Binar 2022</p>
+                        <div class="row">
+                            <div class="col-lg-8 col-4">
+                              <div class="icon-Footer"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/f6aaac3cd5.js" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="./scripts/carData.js"></script>
+      <script type="text/javascript" src="./scripts/compontent.js"></script>
+      <script type="text/javascript" src="./scripts/app.js"></script>
+      <script type="text/javascript" src="./scripts/main.js"></script>
+      <script src="./js/cariMobilScript.js"></script>
+  </body>
+</html>
